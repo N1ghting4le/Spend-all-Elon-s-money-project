@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+
+body {
+    font-family: 'Kanit';
+    background-image: url('images/background.jpg');
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0 auto;
+    font-weight: 600;
+    color: rgb(78, 2, 78);
+    font-size: 40px;
+}
+
+.Elon {
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 75px auto 75px;
+}
+
+.balance {
+    margin: 0 auto;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(78, 2, 78);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: rgba(255, 255, 255, 0.844);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px grey, -2px -4px 10px grey;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid grey;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    height: 60px;
+    background-color: aqua;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-bottom: 1px solid grey;
+}
+
+.single_filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    height: 50px;
+    border-top: 1px solid grey; 
+}
+
+.single_filter:hover {
+    background-color:rgba(98, 167, 99, 0.451);
+    cursor: default;
+}
+
+.active {
+    background-color:rgb(98, 167, 99);
+    color:rgb(78, 2, 78);
+}
+
+.active:hover {
+    background-color:rgb(98, 167, 99);
+    color:rgb(78, 2, 78);
+}
+
+.goods {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid grey;
+}
+
+.items {
+    display: grid;
+    border-top: 1px solid grey;
+    border-bottom: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.single_item {
+    display: grid;
+    grid-template-rows: 150px 25px 25px 50px;
+    place-items: center;
+    height: 250px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.single_item_img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.single_item_title {
+    text-align: center;
+    width: inherit;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.single_item_price {
+    text-align: center;
+    width: inherit;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.amount {
+    display: grid;
+    width: 150px;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+button {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 0;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.red {
+    background-color:maroon;
+}
+
+.red:hover {
+    background-color:rgb(82, 1, 1);
+}
+
+.green {
+    background-color:darkolivegreen;
+}
+
+.green:hover {
+    background-color:rgb(52, 66, 29);
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(78, 2, 78);
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 24px;
+    margin-bottom: 11px;
+}
+
+.long {
+    font-size: 14px;
+}
+
+.long_num {
+    font-size: 16px;
+}

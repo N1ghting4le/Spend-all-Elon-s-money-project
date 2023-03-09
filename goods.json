@@ -1,0 +1,529 @@
+{
+  "goods": [
+    {
+      "id": 1,
+      "name": "Cessna Citation XLS+",
+      "category": "vehicles",
+      "price": 10000000,
+      "img": "private_jet.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Airbus Helicopters H155",
+      "category": "vehicles",
+      "price": 8200000,
+      "img": "airbus_h155.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Benetti Delfino 95",
+      "category": "vehicles",
+      "price": 5332200,
+      "img": "super_yacht.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ferrari LaFerrari Aperta",
+      "category": "vehicles",
+      "price": 2000000,
+      "img": "Ferrari_LaFerrari_Aperta.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Bugatti Divo",
+      "category": "vehicles",
+      "price": 5400000,
+      "img": "bugatti_divo.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Koenigsegg Jesko",
+      "category": "vehicles",
+      "price": 3400000,
+      "img": "koenigsegg_jesko.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Aston Martin Valkyrie",
+      "category": "vehicles",
+      "price": 2600000,
+      "img": "aston_martin.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Mercedes-AMG One",
+      "category": "vehicles",
+      "price": 2500000,
+      "img": "mercedes.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Lamborghini Sesto Elemento",
+      "category": "vehicles",
+      "price": 2200000,
+      "img": "lamborghini.jpg"
+    },
+    {
+      "id": 10,
+      "name": "McLaren Speedtail",
+      "category": "vehicles",
+      "price": 2200000,
+      "img": "mclaren.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Zenvo TS1 GT",
+      "category": "vehicles",
+      "price": 1900000,
+      "img": "zenvo.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Big Mac",
+      "category": "food",
+      "price": 5,
+      "img": "big_mac.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Pepperoni",
+      "category": "food",
+      "price": 12,
+      "img": "pepperoni.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Spaghetti 450g",
+      "category": "food",
+      "price": 1.5,
+      "img": "spaghetti.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Lays 140g",
+      "category": "food",
+      "price": 1.7,
+      "img": "lays.jpg"
+    },
+    {
+      "id": 16,
+      "name": "PS5",
+      "category": "gaming",
+      "price": 810,
+      "img": "ps5.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Xbox Series S",
+      "category": "gaming",
+      "price": 370,
+      "img": "xboxs.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Xbox Series X",
+      "category": "gaming",
+      "price": 690,
+      "img": "xboxx.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Steam Deck",
+      "category": "gaming",
+      "price": 1250,
+      "img": "steam_deck.jpg"
+    },
+    {
+      "id": 20,
+      "name": "AOC Agon Pro AG274QS 2K 300 hz",
+      "category": "gaming",
+      "price": 1465,
+      "img": "2k300hz.jpeg"
+    },
+    {
+      "id": 21,
+      "name": "Dell AW2521H full hd 360 hz",
+      "category": "gaming",
+      "price": 870,
+      "img": "hd360hz.jpeg"
+    },
+    {
+      "id": 22,
+      "name": "Gigabyte M28U 4K 144 hz",
+      "category": "gaming",
+      "price": 760,
+      "img": "4k144hz.jpeg"
+    },
+    {
+      "id": 23,
+      "name": "Gigabyte M27Q X 2k 240 hz",
+      "category": "gaming",
+      "price": 730,
+      "img": "2k240hz.jpeg"
+    },
+    {
+      "id": 24,
+      "name": "Dell S2522HG full hd 240 hz",
+      "category": "gaming",
+      "price": 475,
+      "img": "hd240hz.jpeg"
+    },
+    {
+      "id": 25,
+      "name": "LG UltraGear 27GN800-B 2k 144 hz",
+      "category": "gaming",
+      "price": 380,
+      "img": "2k144hz.jpeg"
+    },
+    {
+      "id": 26,
+      "name": "LG UltraGear 24GN600-B full hd 144 hz",
+      "category": "gaming",
+      "price": 265,
+      "img": "hd144hz.jpeg"
+    },
+    {
+      "id": 27,
+      "name": "Razer Basilisk V3 Pro",
+      "category": "gaming",
+      "price": 375,
+      "img": "razer_basilisk.jpeg"
+    },
+    {
+      "id": 28,
+      "name": "Logitech G502 X Plus",
+      "category": "gaming",
+      "price": 275,
+      "img": "logitech_g502.jpeg"
+    },
+    {
+      "id": 29,
+      "name": "Xtrfy M42 Wireless",
+      "category": "gaming",
+      "price": 205,
+      "img": "xtrfy_m42.jpeg"
+    },
+    {
+      "id": 30,
+      "name": "Logitech G Pro Wireless",
+      "category": "gaming",
+      "price": 130,
+      "img": "logitech_g_pro.jpeg"
+    },
+    {
+      "id": 31,
+      "name": "Razer Viper 8KHz",
+      "category": "gaming",
+      "price": 70,
+      "img": "razer_viper.jpeg"
+    },
+    {
+      "id": 32,
+      "name": "SteelSeries Apex Pro Mini Wireless",
+      "category": "gaming",
+      "price": 375,
+      "img": "apex_pro.jpeg"
+    },
+    {
+      "id": 33,
+      "name": "Razer Deathstalker V2",
+      "category": "gaming",
+      "price": 280,
+      "img": "razer_deathstalker.jpeg"
+    },
+    {
+      "id": 34,
+      "name": "Razer Huntsman V2 TKL",
+      "category": "gaming",
+      "price": 200,
+      "img": "razer_huntsman.jpeg"
+    },
+    {
+      "id": 35,
+      "name": "Razer Huntsman Mini Clicky",
+      "category": "gaming",
+      "price": 120,
+      "img": "razer_huntsman_mini.jpeg"
+    },
+    {
+      "id": 36,
+      "name": "Audeze LCD-GX",
+      "category": "gaming",
+      "price": 1380,
+      "img": "audeze.jpeg"
+    },
+    {
+      "id": 37,
+      "name": "SteelSeries Arctis 1 Wireless",
+      "category": "gaming",
+      "price": 305,
+      "img": "arctis.jpeg"
+    },
+    {
+      "id": 38,
+      "name": "Logitech G Pro X",
+      "category": "gaming",
+      "price": 145,
+      "img": "g_pro_x.jpeg"
+    },
+    {
+      "id": 39,
+      "name": "HyperX Cloud Alpha",
+      "category": "gaming",
+      "price": 105,
+      "img": "hyperx_cloud.jpeg"
+    },
+    {
+      "id": 40,
+      "name": "Gigabyte Aorus GeForce RTX 4090",
+      "category": "computer components",
+      "price": 3400,
+      "img": "rtx4090.jpeg"
+    },
+    {
+      "id": 41,
+      "name": "ASUS ROG Strix GeForce RTX 4080",
+      "category": "computer components",
+      "price": 2300,
+      "img": "rtx4080.jpeg"
+    },
+    {
+      "id": 42,
+      "name": "ASUS ROG Strix GeForce RTX 4070 Ti",
+      "category": "computer components",
+      "price": 1700,
+      "img": "rtx4070ti.jpeg"
+    },
+    {
+      "id": 43,
+      "name": "Gigabyte GeForce RTX 3080",
+      "category": "computer components",
+      "price": 1500,
+      "img": "rtx3080.jpeg"
+    },
+    {
+      "id": 44,
+      "name": "EVGA GeForce RTX 3070 Ti",
+      "category": "computer components",
+      "price": 1250,
+      "img": "rtx3070ti.jpeg"
+    },
+    {
+      "id": 45,
+      "name": "Palit GeForce RTX 3070",
+      "category": "computer components",
+      "price": 1000,
+      "img": "rtx3070.jpeg"
+    },
+    {
+      "id": 46,
+      "name": "MSI GeForce RTX 3060 Ti",
+      "category": "computer components",
+      "price": 750,
+      "img": "rtx3060ti.jpeg"
+    },
+    {
+      "id": 47,
+      "name": "MSI GeForce RTX 3060",
+      "category": "computer components",
+      "price": 600,
+      "img": "rtx3060.jpeg"
+    },
+    {
+      "id": 48,
+      "name": "MSI GeForce RTX 3050",
+      "category": "computer components",
+      "price": 500,
+      "img": "rtx3050.jpeg"
+    },
+    {
+      "id": 49,
+      "name": "Intel core I9-13900k",
+      "category": "computer components",
+      "price": 800,
+      "img": "i913900k.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Intel Core i7-13700K",
+      "category": "computer components",
+      "price": 550,
+      "img": "i713700k.jpeg"
+    },
+    {
+      "id": 51,
+      "name": "Intel Core i5-13600K",
+      "category": "computer components",
+      "price": 430,
+      "img": "i513600k.jpeg"
+    },
+    {
+      "id": 52,
+      "name": "Intel Core i5-13400F",
+      "category": "computer components",
+      "price": 285,
+      "img": "i513400f.jpeg"
+    },
+    {
+      "id": 53,
+      "name": "Intel Core i3-13100F",
+      "category": "computer components",
+      "price": 160,
+      "img": "i313100f.jpeg"
+    },
+    {
+      "id": 54,
+      "name": "Team T-Force Delta RGB 2x16GB DDR5 7800 Mhz",
+      "category": "computer components",
+      "price": 530,
+      "img": "t-force.jpeg"
+    },
+    {
+      "id": 55,
+      "name": "G.Skill Trident Z5 RGB 2x16GB DDR5 7200 Mhz",
+      "category": "computer components",
+      "price": 400,
+      "img": "7200.jpeg"
+    },
+    {
+      "id": 56,
+      "name": "Patriot Viper Venom RGB 2x16GB DDR5 6600 Mhz",
+      "category": "computer components",
+      "price": 300,
+      "img": "6600.jpeg"
+    },
+    {
+      "id": 57,
+      "name": "Kingston FURY Beast 2x16GB DDR5 6000 Mhz",
+      "category": "computer components",
+      "price": 200,
+      "img": "kingston_fury.jpeg"
+    },
+    {
+      "id": 58,
+      "name": "Apacer NOX 2x8GB DDR5 5200 Mhz",
+      "category": "computer components",
+      "price": 100,
+      "img": "5200.jpeg"
+    },
+    {
+      "id": 59,
+      "name": "ASUS Prime Z790",
+      "category": "computer components",
+      "price": 370,
+      "img": "z790.jpg"
+    },
+    {
+      "id": 60,
+      "name": "Gigabyte B760M Aorus Elite AX",
+      "category": "computer components",
+      "price": 305,
+      "img": "b760.jpeg"
+    },
+    {
+      "id": 61,
+      "name": "ASRock Z690 Phantom Gaming 4/D5",
+      "category": "computer components",
+      "price": 270,
+      "img": "z690.jpeg"
+    },
+    {
+      "id": 62,
+      "name": "ASUS ROG Strix LC II 360 ARGB",
+      "category": "computer components",
+      "price": 500,
+      "img": "water_cooler.jpeg"
+    },
+    {
+      "id": 63,
+      "name": "ID-Cooling SE-207-XT Black",
+      "category": "computer components",
+      "price": 55,
+      "img": "280w.jpeg"
+    },
+    {
+      "id": 64,
+      "name": "ID-Cooling SE-224-XTS",
+      "category": "computer components",
+      "price": 25,
+      "img": "220w.jpeg"
+    },
+    {
+      "id": 65,
+      "name": "SSD Samsung PM1643a 30.72TB",
+      "category": "computer components",
+      "price": 7000,
+      "img": "ssd_samsung.jpeg"
+    },
+    {
+      "id": 66,
+      "name": "Kingston KC3000 4TB",
+      "category": "computer components",
+      "price": 670,
+      "img": "4tb.jpeg"
+    },
+    {
+      "id": 67,
+      "name": "SSD Samsung 970 Evo Plus 2TB",
+      "category": "computer components",
+      "price": 245,
+      "img": "2tb.jpeg"
+    },
+    {
+      "id": 68,
+      "name": "SSD Samsung 970 Evo Plus 1TB",
+      "category": "computer components",
+      "price": 145,
+      "img": "1tb.jpeg"
+    },
+    {
+      "id": 69,
+      "name": "AeroCool KCAS Plus 1200GM",
+      "category": "computer components",
+      "price": 200,
+      "img": "kcas1200.jpeg"
+    },
+    {
+      "id": 70,
+      "name": "Chieftec Proton BDF-1000C",
+      "category": "computer components",
+      "price": 170,
+      "img": "chieftec1000.jpeg"
+    },
+    {
+      "id": 71,
+      "name": "AeroCool KCAS Plus 800W",
+      "category": "computer components",
+      "price": 95,
+      "img": "kcas800.jpeg"
+    },
+    {
+      "id": 72,
+      "name": "AeroCool KCAS Plus 600W",
+      "category": "computer components",
+      "price": 55,
+      "img": "kcas600.jpeg"
+    },
+    {
+      "id": 73,
+      "name": "Zalman Z-Machine 500",
+      "category": "computer components",
+      "price": 1300,
+      "img": "zalman_z-machine.jpeg"
+    },
+    {
+      "id": 74,
+      "name": "Thermaltake Core P8 TG",
+      "category": "computer components",
+      "price": 325,
+      "img": "thermaltake.jpeg"
+    },
+    {
+      "id": 75,
+      "name": "be quiet! PURE BASE 500DX BGW37",
+      "category": "computer components",
+      "price": 170,
+      "img": "pure_base.jpeg"
+    }
+  ]
+}
