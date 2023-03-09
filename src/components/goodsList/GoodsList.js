@@ -4,14 +4,23 @@ import store from "../../store";
 import { selectAll } from "../../slices/selectedGoodsSlice";
 
 import GoodsListItem from "../goodsListItem/GoodsListItem";
+import Spinner from "../spinner/Spinner";
 
 const GoodsList = () => {
     const {
-        data: goods = []
+        data: goods = [],
+        isLoading,
+        isError
     } = useGetGoodsQuery();
 
     const {activeFilter} = useSelector(state => state.filters);
     const selectedGoods = selectAll(store.getState());
+
+    if (isLoading) {
+        return <Spinner/>;
+    } else if (isError) {
+        return <h5 className="message">Loading error</h5>
+    }
 
     const renderGoodsList = () => {
         if (activeFilter === 'all') {
