@@ -1,1 +1,1 @@
-Spend-all-Elon-s-money-project
+This is code of "Spend all Elon's money" website
