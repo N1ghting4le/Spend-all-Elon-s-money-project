@@ -8,8 +8,8 @@ const App = () => {
   return (
     <>
       <AppHeader/>
+      <Balance/>
       <main>
-        <Balance/>
         <div className="wrapper">
           <Filters/>
           <GoodsList/>
