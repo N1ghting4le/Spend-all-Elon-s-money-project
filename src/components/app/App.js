@@ -8,14 +8,15 @@ const App = () => {
   return (
     <>
       <AppHeader/>
-      <Balance/>
-      <main>
-        <div className="wrapper">
-          <Filters/>
-          <GoodsList/>
-        </div>
+      <div className="money">
+        <Balance/>
+        <div className="line"></div>
         <Total/>
-      </main>
+      </div>
+      <div className="wrapper">
+        <Filters/>
+        <GoodsList/>
+      </div>
     </>
   );
 };
