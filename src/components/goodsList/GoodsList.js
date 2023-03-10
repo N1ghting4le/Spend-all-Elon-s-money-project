@@ -8,10 +8,11 @@ import Spinner from "../spinner/Spinner";
 
 const GoodsList = () => {
     const {
-        data: goods = [],
+        data: response = {},
         isLoading,
         isError
     } = useGetGoodsQuery();
+    let goods = [];
 
     const {activeFilter} = useSelector(state => state.filters);
     const selectedGoods = selectAll(store.getState());
@@ -20,6 +21,8 @@ const GoodsList = () => {
         return <Spinner/>;
     } else if (isError) {
         return <h5 className="message">Loading error</h5>
+    } else {
+        goods = response.record.goods;
     }
 
     const renderGoodsList = () => {
