@@ -20,34 +20,17 @@ const GoodsList = () => {
     if (isLoading) {
         return <Spinner/>;
     } else if (isError) {
-        return <h5 className="message">Loading error</h5>
+        return <h5 className="message">Loading error</h5>;
     } else {
         goods = response.record.goods;
     }
 
-    const renderGoodsList = () => {
-        if (activeFilter === 'all') {
-            return goods.map(item => {
-                return <GoodsListItem key={item.id} item={item} hidden={false}/>;
-            });
-        } else if (activeFilter === 'selected') {
-            return goods.map(item => {
-                if (selectedGoods.includes(item)) {
-                    return <GoodsListItem key={item.id} item={item} hidden={false}/>;
-                } else {
-                    return <GoodsListItem key={item.id} item={item} hidden={true}/>;
-                }
-            });
-        } else {
-            return goods.map(item => {
-                if (item.category === activeFilter) {
-                    return <GoodsListItem key={item.id} item={item} hidden={false}/>;
-                } else {
-                    return <GoodsListItem key={item.id} item={item} hidden={true}/>;
-                }
-            });
-        }
-    };
+    const renderGoodsList = () => goods.map(item => <GoodsListItem key={item.id} 
+                                                                   item={item} 
+                                                                   hidden={activeFilter === 'all' ? false :
+                                                                           activeFilter === 'selected' ?
+                                                                           !selectedGoods.includes(item) :
+                                                                           item.category !== activeFilter}/>);
 
     const elements = renderGoodsList();
 
@@ -57,9 +40,8 @@ const GoodsList = () => {
             <ul className="items">
                 {elements}
             </ul>
-            {activeFilter === 'selected' ? 
-            selectedGoods.length > 0 ? null : <div className="message">You haven't selected any goods yet</div> : 
-            null}
+            {activeFilter === 'selected' && selectedGoods.length === 0 ? 
+            <div className="message">You haven't selected any goods yet</div> : null}
         </div>
     );
 };

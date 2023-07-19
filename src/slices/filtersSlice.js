@@ -3,6 +3,7 @@ import { createSlice, createEntityAdapter } from "@reduxjs/toolkit";
 const filtersAdapter = createEntityAdapter();
 
 const initialState = filtersAdapter.getInitialState({
+    filters: ['all', 'vehicles', 'food', 'gaming', 'computer components', 'selected'],
     activeFilter: 'all'
 });
 
@@ -11,7 +12,7 @@ const filtersSlice = createSlice({
     initialState,
     reducers: {
         activeFilterChange: (state, action) => {
-            state.activeFilter = action.payload
+            state.activeFilter = action.payload;
         }
     }
 });

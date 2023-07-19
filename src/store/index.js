@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import balance from '../slices/balanceSlice';
-import total from '../slices/totalSlice';
+import money from '../slices/moneySlice';
 import filters from '../slices/filtersSlice';
 import selectedGoods from '../slices/selectedGoodsSlice';
 import { apiSlice } from '../api/apiSlice'; 
@@ -15,7 +14,7 @@ const stringMiddleware = () => (next) => (action) => {
 };
 
 const store = configureStore({
-    reducer: {balance, total, filters, selectedGoods, [apiSlice.reducerPath]: apiSlice.reducer},
+    reducer: {money, filters, selectedGoods, [apiSlice.reducerPath]: apiSlice.reducer},
     middleware: getDefaultMiddleware => getDefaultMiddleware().concat(stringMiddleware, apiSlice.middleware),
     devTools: process.env.NODE_ENV !== 'production'
 })
