@@ -12,18 +12,14 @@ const GoodsList = () => {
         isLoading,
         isError
     } = useGetGoodsQuery();
-    let goods = [];
 
     const {activeFilter} = useSelector(state => state.filters);
     const selectedGoods = selectAll(store.getState());
 
-    if (isLoading) {
-        return <Spinner/>;
-    } else if (isError) {
-        return <h5 className="message">Loading error</h5>;
-    } else {
-        goods = response.record.goods;
-    }
+    if (isLoading) return <Spinner/>;
+    if (isError) return <h5 className="message flex_center">Loading error</h5>;
+    
+    const {goods} = response.record;
 
     const renderGoodsList = () => goods.map(item => <GoodsListItem key={item.id} 
                                                                    item={item} 
@@ -35,14 +31,13 @@ const GoodsList = () => {
     const elements = renderGoodsList();
 
     return (
-        <div className="goods">
-            <div className="title">goods:</div>
+        <>
             <ul className="items">
                 {elements}
             </ul>
             {activeFilter === 'selected' && selectedGoods.length === 0 ? 
             <div className="message">You haven't selected any goods yet</div> : null}
-        </div>
+        </>
     );
 };
 

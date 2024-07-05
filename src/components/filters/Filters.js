@@ -16,30 +16,23 @@ const Filters = () => {
         }
     }
 
-    const isSelected = (str) => {
-        return str === activeFilter ?
-        classNames({
-            'active': true
-        }) :
-        classNames({
-            'active': false
-        });
-    }
+    const isSelected = (str) => classNames({
+        'active': str === activeFilter
+    });
 
-    const renderFiltersList = () => filters.map(item => <li tabIndex={0} 
-                                                            className={`single_filter ${isSelected(item)}`}
-                                                            onClick={onActiveFilterChange}
-                                                            onKeyDown={onFilterChangeByEnter}>{item}</li>);
+    const renderFiltersList = () => filters.map(item => (
+        <li tabIndex={0} 
+            className={`single_filter flex_center font_20px_400 ${isSelected(item)}`}
+            onClick={onActiveFilterChange}
+            onKeyDown={onFilterChangeByEnter}>{item}</li>
+    ));
 
     const elements = renderFiltersList();
 
     return (
-        <div className="filters">
-            <div className="title">filters:</div>
-            <ul>
-                {elements}
-            </ul>
-        </div>
+        <ul className="white_bg">
+            {elements}
+        </ul>
     );
 };
 

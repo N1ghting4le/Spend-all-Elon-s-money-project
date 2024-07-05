@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import { sell, buy } from "../../slices/moneySlice";
 import { addItem, removeItem } from "../../slices/selectedGoodsSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,37 +10,18 @@ const GoodsListItem = ({item, hidden}) => {
     const {balance} = useSelector(state => state.money);
     const [amount, setAmount] = useState(0);
 
-    const changeBtnClass = useCallback(() => {
-        return price > balance ?
-        classNames({
-            'green': false,
-            'red': true
-        }) :
-        classNames({
-            'green': true,
-            'red': false
-        });
-    }, [price, balance]);
+    const changeBtnClass = () => classNames({
+        'green': price <= balance,
+        'red': price > balance
+    });
 
-    const checkNameLength = useCallback(() => {
-        return name.length >= 29 ?
-        classNames({
-            'long': true
-        }) :
-        classNames({
-            'long': false
-        });
-    }, [name]);
+    const checkNameLength = () => classNames({
+        'long': name.length >= 29
+    });
 
-    const checkAmountLength = useCallback(() => {
-        return amount >= 10000 ?
-        classNames({
-            'long_num': true
-        }) :
-        classNames({
-            'long_num': false
-        });
-    }, [amount]);
+    const checkAmountLength = () => classNames({
+        'long_num': amount >= 10000
+    });
 
     const sellItem = () => {
         if (amount > 0) {
@@ -66,11 +47,11 @@ const GoodsListItem = ({item, hidden}) => {
         <li className="single_item">
             <img src={`images/${img}`} alt={name} className="single_item_img"/>
             <div className={`single_item_title ${checkNameLength()}`}>{name}</div>
-            <div className="single_item_price">{price}$</div>
+            <div className="single_item_price font_20px_400">{price}$</div>
             <div className="amount">
-                <button className={changeBtnClass()} onClick={buyItem}>+</button>
-                <div className={`number ${checkAmountLength()}`}>{amount}</div>
-                <button className="red" onClick={sellItem}>-</button>
+                <button className={`flex_center ${changeBtnClass()}`} onClick={buyItem}>+</button>
+                <div className={`number font_20px_400 flex_center ${checkAmountLength()}`}>{amount}</div>
+                <button className="flex_center red" onClick={sellItem}>-</button>
             </div>
         </li>
     ) : null;
