@@ -1,22 +1,19 @@
-import { configureStore } from '@reduxjs/toolkit';
-import money from '../slices/moneySlice';
-import filters from '../slices/filtersSlice';
-import selectedGoods from '../slices/selectedGoodsSlice';
-import { apiSlice } from '../api/apiSlice'; 
-
-const stringMiddleware = () => (next) => (action) => {
-    if (typeof action === 'string') {
-        return next({
-            type: action
-        })
-    }
-    return next(action)
-};
+import { configureStore } from "@reduxjs/toolkit";
+import { apiSlice } from "../api/apiSlice";
+import filters from "../slices/filtersSlice";
+import money from "../slices/moneySlice";
+import selectedGoods from "../slices/selectedGoodsSlice";
 
 const store = configureStore({
-    reducer: {money, filters, selectedGoods, [apiSlice.reducerPath]: apiSlice.reducer},
-    middleware: getDefaultMiddleware => getDefaultMiddleware().concat(stringMiddleware, apiSlice.middleware),
-    devTools: process.env.NODE_ENV !== 'production'
-})
+  reducer: {
+    money,
+    filters,
+    selectedGoods,
+    [apiSlice.reducerPath]: apiSlice.reducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(apiSlice.middleware),
+  devTools: process.env.NODE_ENV !== "production",
+});
 
 export default store;

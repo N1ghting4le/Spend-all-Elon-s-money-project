@@ -1,24 +1,15 @@
-import { createSlice, createEntityAdapter } from "@reduxjs/toolkit";
-
-const filtersAdapter = createEntityAdapter();
-
-const initialState = filtersAdapter.getInitialState({
-    filters: ['all', 'vehicles', 'food', 'gaming', 'computer components', 'selected'],
-    activeFilter: 'all'
-});
+import { createSlice } from "@reduxjs/toolkit";
+import { filters } from "../constants/filters";
 
 const filtersSlice = createSlice({
-    name: 'filters',
-    initialState,
-    reducers: {
-        activeFilterChange: (state, action) => {
-            state.activeFilter = action.payload;
-        }
-    }
+  name: "filters",
+  initialState: filters[0],
+  reducers: {
+    activeFilterChange: (_, action) => action.payload,
+  },
 });
 
-const {actions, reducer} = filtersSlice;
+const { actions, reducer } = filtersSlice;
+
+export const { activeFilterChange } = actions;
 export default reducer;
-export const {
-    activeFilterChange
-} = actions;
